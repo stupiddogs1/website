@@ -47,3 +47,16 @@ ReadDeviceData | Read data from devices, return int or array of int
 WriteDeviceData | Write data to devices
 Close | Close connection
 Dispose | Dispose all resources
+
+### Playmaker Actions
+
+Playmaker Actions is under `MX Component` category.
+
+| Name | Description |
+--|--|
+OpenMXConnection | Open Connection
+ReadDeviceData | Read data from device
+BulkReadDevicesData | Bulk read data from devices
+WriteDeviceData | Write data to device
+BulkWriteDevicesData | Bukl write data to device
+CloseMXConnection | Close connection
