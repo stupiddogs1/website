@@ -12,6 +12,7 @@ Any questions, please contact 1372610017@qq.com
 
 - Mitsubishi PLC devices: FX1N、FX2N、FX3U、FX5U etc.
 - GXWorks2 and GXWorks3 Simulators.
+- Only Supports Windows for now.
 
 ### Code Samples
 
