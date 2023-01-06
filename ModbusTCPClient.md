@@ -4,7 +4,10 @@
 
 ModbusTCPClient is a TCP Client for Modbus protocol. You can read/write coils and registers to devices or simulators that implemented Modbus TCP Server.
 
+ModbusTCPClient supports all platforms that support .NET sockets.
 ModbusTCPClient also has Playmaker actions integrated.
+
+Any questions, please contact 1372610017@qq.com
 
 ### APIs
 
