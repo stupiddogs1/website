@@ -30,7 +30,12 @@ OnCompleted | Event called when reading data completed
 ##### Code Sample
 
 ```csharp
-ReadCoilsAction action = new ReadCoilsAction(serverWithPort.Value, coilName.Value, numberOfPoints.Value);
+ReadCoilsAction action = new ReadCoilsAction(
+    serverWithPort.Value, 
+    coilName.Value, 
+    numberOfPoints.Value
+);
+
 action.ReuseConnection = ReuseConnection.Value;
 action.OnCompleted = OnDataReceived;
 action.Execute();
@@ -56,7 +61,12 @@ OnCompleted | Event called when write data completed
 ##### Code Sample
 
 ```csharp
-WriteCoilsAction action = new WriteCoilsAction(serverWithPort.Value, coilName.Value, coilValues.Value);
+WriteCoilsAction action = new WriteCoilsAction(
+    serverWithPort.Value, 
+    coilName.Value, 
+    coilValues.Value
+);
+
 action.OnCompleted = Finish;
 action.ReuseConnection = ReuseConnection.Value;
 action.Execute();
@@ -84,7 +94,12 @@ OnCompleted | Event called when reading data completed
 ##### Code Sample
 
 ```csharp
-ReadInputsAction action = new ReadInputsAction(serverWithPort.Value, inputName.Value, numberOfPoints.Value);
+ReadInputsAction action = new ReadInputsAction(
+    serverWithPort.Value, 
+    inputName.Value, 
+    numberOfPoints.Value
+);
+
 action.ReuseConnection = ReuseConnection.Value;
 action.OnCompleted = OnDataReceived;
 action.Execute();
@@ -112,7 +127,12 @@ OnCompleted | Event called when reading data completed
 ##### Code Sample
 
 ```csharp
-ReadHoldingRegistersAction action = new ReadHoldingRegistersAction(serverWithPort.Value, startAddress.Value, numberOfPoints.Value);
+ReadHoldingRegistersAction action = new ReadHoldingRegistersAction(
+    serverWithPort.Value, 
+    startAddress.Value, 
+    numberOfPoints.Value
+);
+
 action.ReuseConnection = ReuseConnection.Value;
 action.OnCompleted = OnDataReceived;
 action.Execute();
@@ -138,7 +158,12 @@ OnCompleted | Event called when write data completed
 ##### Code Sample
 
 ```csharp
-WriteHoldingRegistersAction action = new WriteHoldingRegistersAction(serverWithPort.Value, startAddress.Value, registerValues.Value);
+WriteHoldingRegistersAction action = new WriteHoldingRegistersAction(
+    serverWithPort.Value, 
+    startAddress.Value, 
+    registerValues.Value
+);
+
 action.ReuseConnection = ReuseConnection.Value;
 action.OnCompleted = Finish;
 action.Execute();
@@ -166,9 +191,15 @@ OnCompleted | Event called when reading data completed
 ##### Code Sample
 
 ```csharp
-ReadInputRegistersAction action = new ReadInputRegistersAction(serverWithPort.Value, startAddress.Value, numberOfPoints.Value);
+ReadInputRegistersAction action = new ReadInputRegistersAction(
+    serverWithPort.Value, 
+    startAddress.Value, 
+    numberOfPoints.Value
+);
+
 action.ReuseConnection = ReuseConnection.Value;
 action.OnCompleted = OnDataReceived;
+action.Execute();
 ```
 
 ### Playmaker Actions
